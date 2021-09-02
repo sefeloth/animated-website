@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Noticia Text', arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.navContainer {
+  background: #d94ec4;
+}
+
+.navContainer a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header .logo {
+  font-weight: bold;
+}
+
+header li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header li a {
+  display: block;
+  padding: 0 1em;
+}
+
+.socialHeader {
+  display: none;
+}
+
+.hero {
+  background: #d772c8;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.meet {
+  font-weight: bold;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  color: #D04AF0;
+  font-size: 1.5em;
+  letter-spacing: .2em;
+}
+
+.featuredProject {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -.5em;
+  display: block;
+}
+
+.featuredDescription {
+  color: #363636;
+  line-height: 1.8em;
+  margin-bottom: 2em;
+}
+
+.skills {
+  background: #d04af0;
+}
+
+.skillsContainer ul li {
+  background: white;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.skillTitle {
+  font-weight: bold;
+}
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolioContainer a img {
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
+.rightTransition2 {
+  margin-top: 4em;
+}
+
+@media only screen and (min-width: 800px) {
+  .featured, .portfolioContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+    text-align: left;
+  }
+  .rightTransition2 {
+    float: right;
+    margin-right: 4em;
+    margin-top: 1em;
+  }
+  .left, .portfolioLeft {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  /*.skills{//maybe remove this part
+        margin-top: -4em;
+        margin-bottom: -6em;
+        padding-top: 7em;
+    }*/
+  .skillsContainer ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+  .portfolio {
+    padding-top: 7em;
+  }
+  .portfolioContainer img {
+    margin-left: 40em;
+    margin-top: 8em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

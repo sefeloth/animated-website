@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    
+    <div class="navContainer">
+        <header>
+            <a href="index.html" class="logo">Andrew Stevens</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Example Projects</a>
+                        <a href="index.html">My Skillset</a>
+                        <a href="index.html">Hire Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="socialHeader">
+            <ul>
+                <li>
+                    <a href="#">
+                        <!this creates image links like twitter icon you can click to get linked to your twitter etc> 
+                        <img src="images/twitter logo.png" alt="twitter logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="content">
+            <h1>
+                Animated Web Experience
+            </h1>
+            <div class="meet">
+                <p>Get to know Andrew Stevens</p>
+            </div>
+        </div>
+    </div>
+    
+    <img class="rightTransition2" src="images/baby dragon rancher main capsule.jpg" alt="Picture of baby dragons" style="width:616px;height:353px;">
+    
+    <section class="featured">
+        <div class="left">
+            <div class="inner transition2">
+                <p class="subtitle">Featured Project</p>
+                <a href="" class="featuredProject">Baby Dragon Rancher</a>
+                <p class="featuredDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, aspernatur praesentium repellat, vel doloremque neque labore exercitationem magni quisquam tempora architecto beatae sunt explicabo dicta. Qui ab veniam ea consequatur.</p>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="skills">
+        <div class="skillsContainer">
+            <ul>
+                <li class="transition2">
+                    <div class="iconContainterOne">
+                        <img src="images/front end icon.png" alt="icon" style="width:128px;height:128px;">
+                    </div>
+                    <p class="skillTitle">Front End Development</p>
+                    <p class="featuredSkillDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa itaque quidem corporis nobis dolores animi labore dolorem harum accusamus, autem nemo facilis possimus maiores laboriosam velit minus, repellendus consequatur magni.</p>
+                </li>
+
+                <li class="transition2">
+                    <div class="iconContainterTwo">
+                        <img src="images/photo editing icon.png" alt="icon" style="width:128px;height:128px;">
+                    </div>
+                    <p class="skillTitle">Photo Editing</p>
+                    <p class="featuredSkillDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa itaque quidem corporis nobis dolores animi labore dolorem harum accusamus, autem nemo facilis possimus maiores laboriosam velit minus, repellendus consequatur magni.</p>
+                </li>
+
+                <li class="transition2">
+                    <div class="iconContainterThree">
+                        <img src="images/ue4 icon.png" alt="icon" style="width:128px;height:128px;">
+                    </div>
+                    <p class="skillTitle">Unreal Engine Programmer</p>
+                    <p class="featuredSkillDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa itaque quidem corporis nobis dolores animi labore dolorem harum accusamus, autem nemo facilis possimus maiores laboriosam velit minus, repellendus consequatur magni.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="portolio">
+        <div class="portfolioContainer transition3">
+            <div class="portfolioLeft">
+                <div class="inner">
+                    <p class="subtitle">Example Content Here</p>
+                    <p class="featuredTitle">Example Content Here</p>
+                    <p class="featuredDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit pariatur at beatae deleniti molestiae accusamus corrupti reiciendis expedita neque dolores! Perspiciatis ducimus ab numquam obcaecati magni! Earum voluptas saepe cum!</p>
+                </div>
+            </div>
+            <a href="#">
+                <img src="images/ue4 icon.png" alt="Example picture here" style="width:300px;height:300px;">
+            </a>
+        </div>
+
+        <div class="portfolioContainer transition3">
+            <div class="portfolioLeft">
+                <div class="inner">
+                    <p class="subtitle">Example Content Here</p>
+                    <p class="featuredTitle">Example Content Here</p>
+                    <p class="featuredDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit pariatur at beatae deleniti molestiae accusamus corrupti reiciendis expedita neque dolores! Perspiciatis ducimus ab numquam obcaecati magni! Earum voluptas saepe cum!</p>
+                </div>
+            </div>
+            <a href="#">
+                <img src="images/ue4 icon.png" alt="Example picture here" style="width:300px;height:300px;">
+            </a>
+        </div>
+
+        <div class="portfolioContainer transition3">
+            <div class="portfolioLeft">
+                <div class="inner">
+                    <p class="subtitle">Example Content Here</p>
+                    <p class="featuredTitle">Example Content Here</p>
+                    <p class="featuredDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit pariatur at beatae deleniti molestiae accusamus corrupti reiciendis expedita neque dolores! Perspiciatis ducimus ab numquam obcaecati magni! Earum voluptas saepe cum!</p>
+                </div>
+            </div>
+            <a href="#">
+                <img src="images/ue4 icon.png" alt="Example picture here" style="width:300px;height:300px;">
+            </a>
+        </div>
+
+        <script>
+            gsap.from(".transition1", {
+                scrollTrigger: {
+                    trigger: ".transition1",
+                    start: "top center"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.2,
+                stagger: .3
+            })
+
+            gsap.from(".rightTransition2", {
+                scrollTrigger: {
+                    trigger: ".transition1",
+                    start: "top center"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.2,
+                stagger: .3
+            })
+
+            gsap.from(".transition2", {
+                scrollTrigger: {
+                    trigger: ".transition2",
+                    start: "top center"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.2,
+                stagger: .3
+            })
+
+            gsap.from(".transition3", {
+                scrollTrigger: {
+                    trigger: ".transition3",
+                    start: "top center"
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1.2,
+                stagger: .3
+            })
+        </script>
+
+    </section>
+
+
+
+
+</body>
+</html>
